@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13abbd93-71ea-4af1-ad68-15a600baab15" name="Changes" comment="home page done">
+    <list default="true" id="13abbd93-71ea-4af1-ad68-15a600baab15" name="Changes" comment="remove unused files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Pages/API/Index.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Pages/API/Partials/ApiTokenManager.vue" beforeDir="false" />
     </list>
@@ -227,7 +228,7 @@
       <workItem from="1691693126526" duration="97000" />
       <workItem from="1691693497787" duration="46000" />
       <workItem from="1691693579952" duration="5955000" />
-      <workItem from="1691763351010" duration="9145000" />
+      <workItem from="1691763351010" duration="9769000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -245,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691777911316</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="remove unused files">
+      <option name="closed" value="true" />
+      <created>1691779818866</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691779818866</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +266,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="home page done" />
-    <option name="LAST_COMMIT_MESSAGE" value="home page done" />
+    <MESSAGE value="remove unused files" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unused files" />
   </component>
 </project>
