@@ -14,14 +14,12 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return Inertia::render('Index');
-})->name('home');
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-
+    Route::get('/', function () {
+        return Inertia::render('Index');
+    })->name('home');
 });

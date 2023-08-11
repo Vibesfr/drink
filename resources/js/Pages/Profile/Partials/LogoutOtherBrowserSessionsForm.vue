@@ -4,10 +4,10 @@ import { useForm } from '@inertiajs/vue3';
 import ActionMessage from '@/Components/ActionMessage.vue';
 import ActionSection from '@/Components/ActionSection.vue';
 import DialogModal from '@/Components/DialogModal.vue';
-import InputError from '@/Components/InputError.vue';
-import PrimaryButton from '@/Components/PrimaryButton.vue';
+import InputError from '@/Components/Auth/InputError.vue';
+import PrimaryButton from '@/Components/Auth/PrimaryButton.vue';
 import SecondaryButton from '@/Components/SecondaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
+import TextInput from '@/Components/Auth/TextInput.vue';
 
 defineProps({
     sessions: Array,

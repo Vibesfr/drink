@@ -1,19 +1,13 @@
 <script setup>
 import { ref } from 'vue';
 import { Head, Link, router } from '@inertiajs/vue3';
-import ApplicationMark from '@/Components/ApplicationMark.vue';
-import Banner from '@/Components/Banner.vue';
-import Dropdown from '@/Components/Dropdown.vue';
-import DropdownLink from '@/Components/DropdownLink.vue';
-import NavLink from '@/Components/NavLink.vue';
-import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { TrophyIcon, TicketIcon, HomeIcon, UserGroupIcon, PuzzlePieceIcon, UserIcon } from '@heroicons/vue/24/outline'
+import RoundButton from "@/Components/RoundButton.vue";
+import IconButton from "@/Components/IconButton.vue";
 
 defineProps({
     title: String,
 });
-
-const showingNavigationDropdown = ref(false);
 
 const logout = () => {
     router.post(route('logout'));
@@ -23,27 +17,56 @@ const logout = () => {
 <template>
     <div class="container">
         <header class="header">
-            <a href="#" class="header_button">
+            <RoundButton href="">
                 <TrophyIcon />
-            </a>
-            <a href="#" class="header_button">
+            </RoundButton>
+            <RoundButton href="">
                 <TicketIcon />
-            </a>
+            </RoundButton>
         </header>
         <slot></slot>
         <footer class="footer">
-            <a href="#" class="footer_button active">
+            <IconButton href="home">
                 <HomeIcon />
-            </a>
-            <a href="#" class="footer_button">
+            </IconButton>
+            <IconButton href="">
                 <UserGroupIcon />
-            </a>
-            <a href="#" class="footer_button">
+            </IconButton>
+            <IconButton href="">
                 <PuzzlePieceIcon />
-            </a>
-            <a href="#" class="footer_button">
+            </IconButton>
+            <IconButton href="">
                 <UserIcon />
-            </a>
+            </IconButton>
         </footer>
     </div>
 </template>
+
+<style>
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 425px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: var(--main-bg-color);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 18px;
+    position: sticky;
+    bottom: 32px;
+    width: calc(100% - 64px);
+    margin: auto 32px 0;
+    padding: 20px 32px;
+    background-color: var(--secondary-color);
+}
+</style>

@@ -3,10 +3,10 @@ import { ref } from 'vue';
 import { useForm } from '@inertiajs/vue3';
 import ActionMessage from '@/Components/ActionMessage.vue';
 import FormSection from '@/Components/FormSection.vue';
-import InputError from '@/Components/InputError.vue';
-import InputLabel from '@/Components/InputLabel.vue';
-import PrimaryButton from '@/Components/PrimaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
+import InputError from '@/Components/Auth/InputError.vue';
+import InputLabel from '@/Components/Auth/InputLabel.vue';
+import PrimaryButton from '@/Components/Auth/PrimaryButton.vue';
+import TextInput from '@/Components/Auth/TextInput.vue';
 
 const passwordInput = ref(null);
 const currentPasswordInput = ref(null);
